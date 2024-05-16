@@ -1,0 +1,11 @@
+<div>
+    <h1 class="text-2xl text-gray-800 font-bold">Create a new link</h1>
+    <.form class="flex flex-col gap-2 mt-20" for={@form} phx-submit="create-url">
+        <.input field={@form[:url]} type="text" placeholder="URL"/>
+        <button 
+            class="bg-gray-800 px-4 py-2 text-white rounded-sm hover:scale-105 transition-all font-bold"
+            type="submit"
+        >Create</button>
+    </.form>
+
+</div>

@@ -1,0 +1,12 @@
+<div class="flex gap-2 justify-between items-center mb-10">
+    <h1 class="text-2xl text-gray-800 text-center font-bold drop-shadow-lg shadow-orange-600">Your Links</h1>
+    <.link navigate={"/new"} class="bg-gray-800 px-4 py-2 text-white rounded-sm hover:scale-105 transition-all">
+        Add new Link
+    </.link>
+</div>
+<div :for={link <- @links}>
+    <ul class="my-4 flex justify-between border-b-[1px] border-black py-2">
+        <a href={link.url} target="_blank" class="italic text-blue-600"><%= link.url %></a>
+        <span><%= link.inserted_at%></span>
+    </ul>
+</div>
